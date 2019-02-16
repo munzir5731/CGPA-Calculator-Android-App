@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Analyze CGPA </string>
+    <string name="title_activity_graph">Analysis</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="notice_txt">It can be changed from Settings</string>
+
+
+    <string name="title_activity_about">About</string>
+</resources>

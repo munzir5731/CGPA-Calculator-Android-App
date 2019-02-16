@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        app:showAsAction="always" >
+    <menu>
+
+        <item
+            android:id="@+id/action_clearSgpa_field"
+            android:orderInCategory="100"
+            android:title="Clear SGPA fields"
+            android:icon="@drawable/ic_clear_black_24dp"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_clearCredit_field"
+            android:orderInCategory="100"
+            android:title="Clear Credit fields"
+            android:icon="@drawable/ic_clear_black_24dp"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_clearAll_field"
+            android:orderInCategory="100"
+            android:title="Clear all fields"
+            android:icon="@drawable/ic_clear_black_24dp"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:orderInCategory="100"
+            android:title="Settings"
+            app:showAsAction="ifRoom" />
+
+
+        <item
+            android:id="@+id/action_about"
+            android:orderInCategory="100"
+            android:title="About"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            app:showAsAction="ifRoom" />
+
+    </menu>
+    </item>
+</menu>

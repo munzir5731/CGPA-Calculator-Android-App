@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.abdullahal_munzir.mycourse.MainActivity">
+    <item
+        android:id="@+id/action_clearSgpa_field"
+        android:orderInCategory="100"
+        android:title="Clear SGPA fields"
+        android:icon="@drawable/ic_clear_black_24dp"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clearCredit_field"
+        android:orderInCategory="100"
+        android:title="Clear Credit fields"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clearAll_field"
+        android:orderInCategory="100"
+        android:title="Clear all fields"
+        app:showAsAction="never" />
+</menu>

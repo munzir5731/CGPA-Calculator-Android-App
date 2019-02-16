@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.abdullahal_munzir.mycourse.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="1'st Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA  : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa1"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt1"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit1"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="2'nd Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa2"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt2"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit2"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="3'rd Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa3"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt3"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit3"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="4'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt4"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa4"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt4"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit4"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/sem5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="5'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt5"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa5"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt5"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit5"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="6th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt6"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa6"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt6"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit6"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="7'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt7"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa7"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt7"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit7"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="8'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt8"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa8"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt8"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit8"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="9'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt9"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa9"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt9"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit9"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="10'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt10"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa10"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt10"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit10"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="11'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt11"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa11"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt11"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit11"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sem12"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/semester_name_background"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:text="12'th Semester"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/sgpa_txt12"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="SGPA :"
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_sgpa12"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+
+                <TextView
+                    android:id="@+id/credit_txt12"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Credit Taken : "
+                    android:textColor="@color/sea_green"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_credit12"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/sea_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/cal_btn_background"
+            android:elevation="0dp"
+            android:text="Calculate"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
